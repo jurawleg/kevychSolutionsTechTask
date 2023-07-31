@@ -76,7 +76,9 @@ final class WeatherReportViewModel: ObservableObject {
             switch result {
             case .failure(let error):
                 debugPrint("Failed get location. Error - \(error).")
-                self.locations = []
+                DispatchQueue.main.async {
+                    self.locations = []                    
+                }
             case .success(let cities):
                 DispatchQueue.main.async {
                     self.locations = cities.results

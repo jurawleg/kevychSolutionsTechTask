@@ -53,6 +53,7 @@ final class NetworkCaller {
                 } catch {
                     // Log error
                     debugPrint(error)
+                    completion(.failure(error))
                 }
             }
             
