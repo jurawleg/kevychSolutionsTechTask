@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+@MainActor class WeatherReportViewModel: ObservableObject {
+    
+    @Published var repository: WeatherRepository = .init()
+    
+}
