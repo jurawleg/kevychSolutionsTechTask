@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		FAB974EC2A72AEE100A92190 /* Weather_ReportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */; };
-		FAB974EE2A72AEE100A92190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974ED2A72AEE100A92190 /* ContentView.swift */; };
+		FAB974EE2A72AEE100A92190 /* WeatherReportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */; };
 		FAB974F02A72AEE200A92190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB974EF2A72AEE200A92190 /* Assets.xcassets */; };
 		FAB974F32A72AEE200A92190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB974F22A72AEE200A92190 /* Preview Assets.xcassets */; };
 		FAB974FA2A72B0A500A92190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974F92A72B0A500A92190 /* AppDelegate.swift */; };
+		FAB974FC2A72B3CB00A92190 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974FB2A72B3CB00A92190 /* WeatherViewModel.swift */; };
+		FAB974FE2A72B40500A92190 /* NetworkCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974FD2A72B40500A92190 /* NetworkCaller.swift */; };
+		FAB975002A72BA2100A92190 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974FF2A72BA2100A92190 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAB974E82A72AEE100A92190 /* Weather Report.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Report.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_ReportApp.swift; sourceTree = "<group>"; };
-		FAB974ED2A72AEE100A92190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReportList.swift; sourceTree = "<group>"; };
 		FAB974EF2A72AEE200A92190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB974F22A72AEE200A92190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAB974F92A72B0A500A92190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,7 +58,6 @@
 			children = (
 				FAB974F92A72B0A500A92190 /* AppDelegate.swift */,
 				FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */,
-				FAB974ED2A72AEE100A92190 /* ContentView.swift */,
 				FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */,
 				FAB974EF2A72AEE200A92190 /* Assets.xcassets */,
 				FAB974F12A72AEE200A92190 /* Preview Content */,
@@ -143,7 +145,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB974FA2A72B0A500A92190 /* AppDelegate.swift in Sources */,
-				FAB974EE2A72AEE100A92190 /* ContentView.swift in Sources */,
 				FAB974FC2A72B3CB00A92190 /* WeatherViewModel.swift in Sources */,
 				FAB975002A72BA2100A92190 /* LocationManager.swift in Sources */,
 				FAB974EC2A72AEE100A92190 /* Weather_ReportApp.swift in Sources */,
