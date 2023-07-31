@@ -56,8 +56,10 @@
 				FAB974F92A72B0A500A92190 /* AppDelegate.swift */,
 				FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */,
 				FAB974ED2A72AEE100A92190 /* ContentView.swift */,
+				FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */,
 				FAB974EF2A72AEE200A92190 /* Assets.xcassets */,
 				FAB974F12A72AEE200A92190 /* Preview Content */,
+				FAB974FF2A72BA2100A92190 /* LocationManager.swift */,
 			);
 			path = "Weather Report";
 			sourceTree = "<group>";
@@ -142,6 +144,8 @@
 			files = (
 				FAB974FA2A72B0A500A92190 /* AppDelegate.swift in Sources */,
 				FAB974EE2A72AEE100A92190 /* ContentView.swift in Sources */,
+				FAB974FC2A72B3CB00A92190 /* WeatherViewModel.swift in Sources */,
+				FAB975002A72BA2100A92190 /* LocationManager.swift in Sources */,
 				FAB974EC2A72AEE100A92190 /* Weather_ReportApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +277,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Weather Report/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather Report app would like to know your location to show forecast for your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather Report app would like to know your location to show forecast for your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -305,6 +311,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Weather Report/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather Report app would like to know your location to show forecast for your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather Report app would like to know your location to show forecast for your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

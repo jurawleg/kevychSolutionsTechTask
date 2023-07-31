@@ -13,7 +13,7 @@ struct Weather_ReportApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeatherReportList()
         }
     }
 }
