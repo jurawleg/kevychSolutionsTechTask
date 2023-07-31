@@ -13,6 +13,7 @@
 		FA0958B22A780C6C005BD130 /* LocationSearchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958B12A780C6C005BD130 /* LocationSearchSheet.swift */; };
 		FA0958B42A7815B6005BD130 /* GeocodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958B32A7815B6005BD130 /* GeocodingModel.swift */; };
 		FA0958B62A781FFC005BD130 /* GeocodingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958B52A781FFC005BD130 /* GeocodingCell.swift */; };
+		FA09F1E52A785BFD00DBADA3 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09F1E42A785BFD00DBADA3 /* CustomTextView.swift */; };
 		FAB974EC2A72AEE100A92190 /* Weather_ReportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */; };
 		FAB974EE2A72AEE100A92190 /* WeatherReportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */; };
 		FAB974F02A72AEE200A92190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB974EF2A72AEE200A92190 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		FA0958B12A780C6C005BD130 /* LocationSearchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchSheet.swift; sourceTree = "<group>"; };
 		FA0958B32A7815B6005BD130 /* GeocodingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingModel.swift; sourceTree = "<group>"; };
 		FA0958B52A781FFC005BD130 /* GeocodingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingCell.swift; sourceTree = "<group>"; };
+		FA09F1E42A785BFD00DBADA3 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		FAB974E82A72AEE100A92190 /* Weather Report.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Report.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_ReportApp.swift; sourceTree = "<group>"; };
 		FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReportList.swift; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		FA09F1E32A785BDD00DBADA3 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA09F1E42A785BFD00DBADA3 /* CustomTextView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		FAB974DF2A72AEE100A92190 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		FAB974EA2A72AEE100A92190 /* Weather Report */ = {
 			isa = PBXGroup;
 			children = (
+				FA09F1E32A785BDD00DBADA3 /* Custom Views */,
 				FA09F1E22A785A4600DBADA3 /* Sources */,
 				FA09F1E12A785A3B00DBADA3 /* Cells */,
 				FA09F1E02A785A2E00DBADA3 /* Managers */,
@@ -232,6 +243,7 @@
 			files = (
 				FA0958B62A781FFC005BD130 /* GeocodingCell.swift in Sources */,
 				FA0958B02A77FC39005BD130 /* View+Extensions.swift in Sources */,
+				FA09F1E52A785BFD00DBADA3 /* CustomTextView.swift in Sources */,
 				FAB974FC2A72B3CB00A92190 /* WeatherViewModel.swift in Sources */,
 				FAB975002A72BA2100A92190 /* LocationManager.swift in Sources */,
 				FA0958B22A780C6C005BD130 /* LocationSearchSheet.swift in Sources */,

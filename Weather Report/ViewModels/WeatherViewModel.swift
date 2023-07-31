@@ -16,6 +16,7 @@ final class WeatherReportViewModel: ObservableObject {
     @Published var choosenLocation: CLLocation?
     @Published var city: String = ""
     @Published var locations: [GeocodingModel] = []
+    
     private var locationManager: LocationManager
     private var networkCaller: NetworkCaller = .init()
     

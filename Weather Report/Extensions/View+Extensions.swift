@@ -9,6 +9,6 @@ import SwiftUI
 
 extension View {
     func fillWidth() -> some View {
-        self.frame(maxWidth: .infinity)
+        self.frame(maxWidth: .infinity, alignment: .leading)
     }
 }

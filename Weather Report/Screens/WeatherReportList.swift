@@ -69,10 +69,9 @@ extension WeatherReportList {
                         .padding(.leading, 12)
                     
                     Text(viewModel.city.isEmpty ? "Forecast for current location" : viewModel.city)
-                        .foregroundColor(.black)
-                        .padding(.vertical, 8)
-                        .padding(.leading, 8)
-                    
+                        .foregroundColor(viewModel.city.isEmpty ? .gray : .black)
+                        .padding(.vertical, 16)
+                        
                     Spacer()
                 }
                 .overlay(

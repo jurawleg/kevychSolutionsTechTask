@@ -16,7 +16,7 @@ struct GeocodingCell: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 4) {
             CustomTextView(title: "Name", value: location.name)
             CustomTextView(title: "Lat", value: location.latitude)
             CustomTextView(title: "Lng", value: location.longitude)
@@ -24,8 +24,12 @@ struct GeocodingCell: View {
             CustomTextView(title: "Admin 1", value: location.admin1)
             CustomTextView(title: "Admin 2", value: location.admin2 ?? "no data")
         }
+        .padding(.all, 8)
         .fillWidth()
-        .background(Color.yellow)
+        .overlay {
+            RoundedRectangle(cornerRadius: 4)
+                .stroke(.gray, lineWidth: 1)
+        }
         .padding(.horizontal, 16)
     }
 }
