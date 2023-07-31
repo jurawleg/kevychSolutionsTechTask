@@ -8,15 +8,13 @@
 import Foundation
 import CoreLocation
 
-class LocationManager: NSObject {
+class LocationManager: NSObject, ObservableObject {
     
     @Published var location: CLLocation?
     
-    static let shared: LocationManager = .init()
-    
     private var coreLocationManager: CLLocationManager = .init()
     
-    private override init() {
+    override init() {
         super.init()
         coreLocationManager.delegate = self
     }
@@ -52,10 +50,10 @@ extension LocationManager: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error)
+//        Log(error)
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        print(manager.authorizationStatus.rawValue)
+//        Log(manager.authorizationStatus.rawValue)
     }
 }

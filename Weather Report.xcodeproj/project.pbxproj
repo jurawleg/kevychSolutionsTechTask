@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FA0958A92A77D24D005BD130 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958A82A77D24D005BD130 /* ForecastModel.swift */; };
-		FA0958AB2A77D26B005BD130 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958AA2A77D26B005BD130 /* WeatherRepository.swift */; };
+		FA0958AE2A77FC22005BD130 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958AD2A77FC22005BD130 /* ForecastCell.swift */; };
+		FA0958B02A77FC39005BD130 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958AF2A77FC39005BD130 /* View+Extensions.swift */; };
+		FA0958B22A780C6C005BD130 /* LocationSearchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958B12A780C6C005BD130 /* LocationSearchSheet.swift */; };
+		FA0958B42A7815B6005BD130 /* GeocodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958B32A7815B6005BD130 /* GeocodingModel.swift */; };
+		FA0958B62A781FFC005BD130 /* GeocodingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0958B52A781FFC005BD130 /* GeocodingCell.swift */; };
 		FAB974EC2A72AEE100A92190 /* Weather_ReportApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */; };
 		FAB974EE2A72AEE100A92190 /* WeatherReportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */; };
 		FAB974F02A72AEE200A92190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB974EF2A72AEE200A92190 /* Assets.xcassets */; };
 		FAB974F32A72AEE200A92190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB974F22A72AEE200A92190 /* Preview Assets.xcassets */; };
-		FAB974FA2A72B0A500A92190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974F92A72B0A500A92190 /* AppDelegate.swift */; };
 		FAB974FC2A72B3CB00A92190 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974FB2A72B3CB00A92190 /* WeatherViewModel.swift */; };
 		FAB974FE2A72B40500A92190 /* NetworkCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974FD2A72B40500A92190 /* NetworkCaller.swift */; };
 		FAB975002A72BA2100A92190 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB974FF2A72BA2100A92190 /* LocationManager.swift */; };
@@ -21,13 +24,17 @@
 
 /* Begin PBXFileReference section */
 		FA0958A82A77D24D005BD130 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
-		FA0958AA2A77D26B005BD130 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		FA0958AC2A77E35D005BD130 /* Weather-Report-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Weather-Report-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FA0958AD2A77FC22005BD130 /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
+		FA0958AF2A77FC39005BD130 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		FA0958B12A780C6C005BD130 /* LocationSearchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchSheet.swift; sourceTree = "<group>"; };
+		FA0958B32A7815B6005BD130 /* GeocodingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingModel.swift; sourceTree = "<group>"; };
+		FA0958B52A781FFC005BD130 /* GeocodingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingCell.swift; sourceTree = "<group>"; };
 		FAB974E82A72AEE100A92190 /* Weather Report.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather Report.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_ReportApp.swift; sourceTree = "<group>"; };
 		FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherReportList.swift; sourceTree = "<group>"; };
 		FAB974EF2A72AEE200A92190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB974F22A72AEE200A92190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FAB974F92A72B0A500A92190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB974FB2A72B3CB00A92190 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		FAB974FD2A72B40500A92190 /* NetworkCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCaller.swift; sourceTree = "<group>"; };
 		FAB974FF2A72BA2100A92190 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -44,6 +51,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA09F1DB2A7859C200DBADA3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */,
+				FA0958B12A780C6C005BD130 /* LocationSearchSheet.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA09F1DC2A7859EB00DBADA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA0958AF2A77FC39005BD130 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA09F1DD2A7859F800DBADA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA0958A82A77D24D005BD130 /* ForecastModel.swift */,
+				FA0958B32A7815B6005BD130 /* GeocodingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA09F1DE2A785A0A00DBADA3 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				FAB974FD2A72B40500A92190 /* NetworkCaller.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		FA09F1DF2A785A1F00DBADA3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAB974FB2A72B3CB00A92190 /* WeatherViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FA09F1E02A785A2E00DBADA3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FAB974FF2A72BA2100A92190 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FA09F1E12A785A3B00DBADA3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA0958B52A781FFC005BD130 /* GeocodingCell.swift */,
+				FA0958AD2A77FC22005BD130 /* ForecastCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA09F1E22A785A4600DBADA3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		FAB974DF2A72AEE100A92190 = {
 			isa = PBXGroup;
 			children = (
@@ -63,16 +137,17 @@
 		FAB974EA2A72AEE100A92190 /* Weather Report */ = {
 			isa = PBXGroup;
 			children = (
-				FAB974F92A72B0A500A92190 /* AppDelegate.swift */,
-				FAB974EB2A72AEE100A92190 /* Weather_ReportApp.swift */,
-				FAB974ED2A72AEE100A92190 /* WeatherReportList.swift */,
+				FA09F1E22A785A4600DBADA3 /* Sources */,
+				FA09F1E12A785A3B00DBADA3 /* Cells */,
+				FA09F1E02A785A2E00DBADA3 /* Managers */,
+				FA09F1DF2A785A1F00DBADA3 /* ViewModels */,
+				FA09F1DE2A785A0A00DBADA3 /* NetworkLayer */,
+				FA09F1DD2A7859F800DBADA3 /* Models */,
+				FA09F1DC2A7859EB00DBADA3 /* Extensions */,
+				FA09F1DB2A7859C200DBADA3 /* Screens */,
+				FA0958AC2A77E35D005BD130 /* Weather-Report-Info.plist */,
 				FAB974EF2A72AEE200A92190 /* Assets.xcassets */,
 				FAB974F12A72AEE200A92190 /* Preview Content */,
-				FAB974FB2A72B3CB00A92190 /* WeatherViewModel.swift */,
-				FAB974FD2A72B40500A92190 /* NetworkCaller.swift */,
-				FAB974FF2A72BA2100A92190 /* LocationManager.swift */,
-				FA0958A82A77D24D005BD130 /* ForecastModel.swift */,
-				FA0958AA2A77D26B005BD130 /* WeatherRepository.swift */,
 			);
 			path = "Weather Report";
 			sourceTree = "<group>";
@@ -155,14 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB974FA2A72B0A500A92190 /* AppDelegate.swift in Sources */,
+				FA0958B62A781FFC005BD130 /* GeocodingCell.swift in Sources */,
+				FA0958B02A77FC39005BD130 /* View+Extensions.swift in Sources */,
 				FAB974FC2A72B3CB00A92190 /* WeatherViewModel.swift in Sources */,
-				FA0958AB2A77D26B005BD130 /* WeatherRepository.swift in Sources */,
 				FAB975002A72BA2100A92190 /* LocationManager.swift in Sources */,
+				FA0958B22A780C6C005BD130 /* LocationSearchSheet.swift in Sources */,
 				FAB974FE2A72B40500A92190 /* NetworkCaller.swift in Sources */,
+				FA0958AE2A77FC22005BD130 /* ForecastCell.swift in Sources */,
 				FAB974EE2A72AEE100A92190 /* WeatherReportList.swift in Sources */,
 				FAB974EC2A72AEE100A92190 /* Weather_ReportApp.swift in Sources */,
 				FA0958A92A77D24D005BD130 /* ForecastModel.swift in Sources */,
+				FA0958B42A7815B6005BD130 /* GeocodingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +371,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Weather Report/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Weather-Report-Info.plist";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather Report app would like to know your location to show forecast for your current location.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather Report app would like to know your location to show forecast for your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -327,6 +406,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Weather Report/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Weather-Report-Info.plist";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather Report app would like to know your location to show forecast for your current location.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather Report app would like to know your location to show forecast for your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
