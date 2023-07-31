@@ -8,7 +8,7 @@
 import Foundation
 import CoreLocation
 
-@MainActor class LocationManager: NSObject {
+class LocationManager: NSObject {
     
     @Published var location: CLLocation?
     
@@ -16,7 +16,10 @@ import CoreLocation
     
     private var coreLocationManager: CLLocationManager = .init()
     
-    private override init() { }
+    private override init() {
+        super.init()
+        coreLocationManager.delegate = self
+    }
     
     func setupPermission() {
         
@@ -31,7 +34,12 @@ import CoreLocation
     }
     
     func getCurentLocation() {
-        coreLocationManager.requestLocation()
+        DispatchQueue.global(qos: .userInitiated).async {
+            if CLLocationManager.locationServicesEnabled() {
+                self.coreLocationManager.requestLocation()
+                self.coreLocationManager.startUpdatingLocation()
+            }
+        }
     }
     
 }
@@ -41,5 +49,13 @@ extension LocationManager: CLLocationManagerDelegate {
         if let lastLocation = locations.first {
             self.location = lastLocation
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        print(manager.authorizationStatus.rawValue)
     }
 }
