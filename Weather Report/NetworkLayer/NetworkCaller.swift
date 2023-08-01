@@ -10,11 +10,11 @@ import CoreLocation
 
 final class NetworkCaller {
     
-    func searchCity(for text: String, completion: @escaping (Result<GeocodingResults, Error>) -> Void) {
+    final func searchCity(for text: String, completion: @escaping (Result<GeocodingResults, Error>) -> Void) {
+        
         let path = "https://geocoding-api.open-meteo.com/v1/search?name=\(text)&count=10&language=en&format=json"
         
         guard let url = createUrl(path: path, useBaseUrl: false), let request = createRequest(url: url, method: .GET) else {
-            // Log error
             return
         }
         
@@ -23,11 +23,11 @@ final class NetworkCaller {
         })
     }
     
-    func getForecast(lat: CGFloat, lng: CGFloat, completion: @escaping (Result<ForecastModel, Error>) -> Void) {
+    final func getForecast(lat: CGFloat, lng: CGFloat, completion: @escaping (Result<ForecastModel, Error>) -> Void) {
+        
         let path = "/forecast?latitude=\(lat)&longitude=\(lng)&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset,windspeed_10m_max,windgusts_10m_max&timezone=GMT&forecast_days=16"
         
         guard let url = createUrl(path: path), let request = createRequest(url: url, method: .GET) else {
-            // Log error
             return
         }
         
@@ -35,6 +35,10 @@ final class NetworkCaller {
             completion(result)
         })
     }
+    
+}
+
+extension NetworkCaller {
     
     private func runRequest<T: Codable>(request: URLRequest, completion: @escaping (Result<T, Error>) -> Void) {
         URLSession.shared.dataTask(with: request) { data, response, error in
@@ -43,15 +47,12 @@ final class NetworkCaller {
                 debugPrint("Error getting data for request \(request), error - \(error)")
                 completion(.failure(error))
             }
-            
-            print(request.url)
-            
+                        
             if let data = data  {
                 do {
                     let decodedData = try JSONDecoder().decode(T.self, from: data)
                     completion(.success(decodedData))
                 } catch {
-                    // Log error
                     debugPrint(error)
                     completion(.failure(error))
                 }
@@ -59,9 +60,6 @@ final class NetworkCaller {
             
         }.resume()
     }
-}
-
-extension NetworkCaller {
     
     private func createUrl(path: String, useBaseUrl: Bool = true) -> URL? {
         

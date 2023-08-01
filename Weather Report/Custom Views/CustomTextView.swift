@@ -21,6 +21,5 @@ struct CustomTextView: View {
         Text("\(title) - \(String(describing: value))")
             .foregroundColor(.black)
             .fillWidth()
-//            .multilineTextAlignment(.leading)
     }
 }
