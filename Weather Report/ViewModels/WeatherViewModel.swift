@@ -27,10 +27,7 @@ final class WeatherReportViewModel: ObservableObject {
     }
     
     func start() {
-        currentLocation = CLLocation(latitude: 0, longitude: 0)
-        getForecast(lat: currentLocation!.coordinate.latitude, lng: currentLocation!.coordinate.longitude)
-        return
-        
+       
         guard let currentLocation else {
             debugPrint("CurrentLocation is nil, skip getting forecast for default location")
             return
