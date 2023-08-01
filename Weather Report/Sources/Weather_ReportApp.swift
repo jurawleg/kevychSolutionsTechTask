@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct Weather_ReportApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeatherReportList()
+                .environmentObject(WeatherReportViewModel())
         }
     }
 }
